@@ -1,8 +1,17 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/akshansh/.oh-my-zsh"
+
+# Default editor
+export EDITOR='mate -w'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -77,6 +86,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
+	brew
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -108,4 +118,10 @@ alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias py="python3"
 [ -f "/Users/akshansh/.ghcup/env" ] && source "/Users/akshansh/.ghcup/env" # ghcup-env
+alias config='/usr/bin/git --git-dir=/Users/akshansh/.cfg/ --work-tree=/Users/akshansh'
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
 alias config='/usr/bin/git --git-dir=/Users/akshansh/.cfg/ --work-tree=/Users/akshansh'
