@@ -1,14 +1,16 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # GNU compiler collection
 brew "gcc"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
 brew "git"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Tools and libraries to manipulate images in many formats
