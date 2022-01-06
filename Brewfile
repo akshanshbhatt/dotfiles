@@ -7,6 +7,8 @@ brew "gcc"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Tools and libraries to manipulate images in many formats
@@ -15,8 +17,12 @@ brew "imagemagick"
 brew "mas"
 # Fast, highly customisable system info script
 brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Port scanning utility for large networks
 brew "nmap"
+# Python bindings for v5 of Qt
+brew "pyqt@5"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Filesharing using Direct Connect and ADC protocols
