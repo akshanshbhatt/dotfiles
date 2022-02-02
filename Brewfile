@@ -1,6 +1,8 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+# Console Matrix
+brew "cmatrix"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Generate introspection data for GObject libraries
@@ -43,18 +45,5 @@ cask "eiskaltdcpp"
 cask "iterm2"
 # Digital logic designer and simulator
 cask "logisim-evolution"
-mas "AdGuard for Safari", id: 1440147259
-mas "Boop", id: 1518425043
-mas "Codye", id: 1516894961
-mas "Developer", id: 640199958
-mas "GarageBand", id: 682658836
-mas "GeoGebra Classic 6", id: 1182481622
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Microsoft To Do", id: 1274495053
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Slack", id: 803453959
-mas "Telegram", id: 747648890
-mas "Twitter", id: 1482454543
-mas "Vectornator", id: 1219074514
+# Multimedia player
+cask "vlc"
