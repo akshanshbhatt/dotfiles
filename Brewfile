@@ -47,6 +47,10 @@ cask "iterm2"
 cask "logisim-evolution"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Environment for statistical computing and graphics
+cask "r"
+# Data science software focusing on R and Python
+cask "rstudio"
 # Multimedia player
 cask "vlc"
 mas "AdGuard for Safari", id: 1440147259
