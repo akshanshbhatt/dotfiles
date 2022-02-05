@@ -1,3 +1,8 @@
+# Source Mission Control Dotfiles
+if test -f ~/.fig/user/dotfiles/managed.fish
+  source ~/.fig/user/dotfiles/managed.fish
+end
+
 contains $HOME/.fig/bin $fish_user_paths
 or set -Ua fish_user_paths $HOME/.fig/bin
 
@@ -106,3 +111,5 @@ if [ -z "$FIG_SHELL_VAR" ]
   set FIG_SHELL_VAR 1
   set fig_has_set_prompt 0
 end
+
+fig_osc "DoneSourcing"
