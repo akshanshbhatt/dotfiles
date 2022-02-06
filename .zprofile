@@ -3,9 +3,16 @@
 # Please make sure this block is at the start of this file.
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
 #### END FIG ENV VARIABLES ####
+
 eval $(/opt/homebrew/bin/brew shellenv)
 eval $(/opt/homebrew/bin/brew shellenv)
 export GOPATH=$HOME/go
+
+# Nothing here 😓
+# if [ -f ~/.zshrc-default-iterm -a "$ITERM_PROFILE" = "Default" ]
+# then
+# 	source ~/.zshrc-default-iterm
+# fi
 
 # aliases
 

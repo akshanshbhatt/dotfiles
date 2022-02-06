@@ -1,6 +1,9 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "romkatv/powerlevel10k"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Console Matrix
 brew "cmatrix"
 # Secure runtime for JavaScript and TypeScript
@@ -11,6 +14,8 @@ brew "docker"
 brew "gobject-introspection"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
 # GNU compiler collection
 brew "gcc"
 # GitHub command-line tool
@@ -41,6 +46,8 @@ brew "rust"
 brew "tree"
 # Vi 'workalike' with many additional features
 brew "vim"
+# A Zsh Theme
+brew "romkatv/powerlevel10k/powerlevel10k"
 # 3D creation suite
 cask "blender"
 # Web browser focusing on privacy
@@ -96,7 +103,6 @@ cask "vlc"
 mas "AdGuard for Safari", id: 1440147259
 mas "Boop", id: 1518425043
 mas "Codye", id: 1516894961
-mas "Developer", id: 640199958
 mas "GarageBand", id: 682658836
 mas "GeoGebra Classic 6", id: 1182481622
 mas "iMovie", id: 408981434
