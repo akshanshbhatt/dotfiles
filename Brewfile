@@ -1,6 +1,8 @@
+tap "domq/gdb"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/services"
 tap "romkatv/powerlevel10k"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
@@ -92,6 +94,8 @@ cask "rstudio"
 cask "slack"
 # Music streaming service
 cask "spotify"
+# Git client
+cask "sublime-merge"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # General-purpose text editor
