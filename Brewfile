@@ -115,5 +115,4 @@ mas "Microsoft To Do", id: 1274495053
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Telegram", id: 747648890
-mas "Twitter", id: 1482454543
 mas "Vectornator", id: 1219074514
