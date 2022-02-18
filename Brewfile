@@ -28,6 +28,8 @@ brew "git"
 brew "graphviz"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Powerful, lightweight programming language
+brew "lua"
 # Mac App Store command-line interface
 brew "mas"
 # Fast, highly customisable system info script
@@ -44,6 +46,8 @@ brew "nvm"
 brew "pyqt@5"
 # Safe, concurrent, practical language
 brew "rust"
+# Penetration testing for SQL injection and database servers
+brew "sqlmap"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
@@ -100,6 +104,8 @@ cask "sublime-merge"
 cask "sublime-text"
 # General-purpose text editor
 cask "textmate"
+# Tool to invert scroll direction for physical scroll wheels
+cask "unnaturalscrollwheels"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
