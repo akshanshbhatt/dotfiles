@@ -8,10 +8,11 @@ eval $(/opt/homebrew/bin/brew shellenv)
 eval $(/opt/homebrew/bin/brew shellenv)
 export GOPATH=$HOME/go
 
-if [ -f ~/.zshrc-default-iterm -a "$ITERM_PROFILE" = "Default" ]
-then
-	source ~/.zshrc-default-iterm
-fi
+# Nothing here 😓
+# if [ -f ~/.zshrc-default-iterm -a "$ITERM_PROFILE" = "Default" ]
+# then
+# 	source ~/.zshrc-default-iterm
+# fi
 
 # aliases
 
