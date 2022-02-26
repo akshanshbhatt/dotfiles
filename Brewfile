@@ -88,6 +88,8 @@ cask "microsoft-edge"
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Client program for the OpenVPN Access Server
+cask "openvpn-connect"
 # Collaborative presentation software
 cask "pitch"
 # Environment for statistical computing and graphics
