@@ -54,6 +54,8 @@ brew "tree"
 brew "vim"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
+# Multi-track audio editor and recorder
+cask "audacity"
 # 3D creation suite
 cask "blender"
 # Web browser focusing on privacy
