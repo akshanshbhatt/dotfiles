@@ -11,7 +11,7 @@ brew "cmatrix"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Pack, ship and run any application as a lightweight container
-brew "docker"
+brew "docker", link: false
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Play, record, convert, and stream audio and video
@@ -86,6 +86,8 @@ cask "ltspice"
 cask "microsoft-auto-update"
 # Web browser
 cask "microsoft-edge"
+# Minimal installer for conda specific to conda-forge
+cask "miniforge"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
