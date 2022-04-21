@@ -1,9 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-export PATH="${PATH}:${HOME}/.local/bin"
-eval "$(fig init bash pre)"
-
-
-
+. "$HOME/.fig/shell/bash_profile.pre.bash"
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 export PYTHONSTARTUP=$HOME/.pythonstartup
@@ -56,8 +52,5 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-
-
-
 # Fig post block. Keep at the bottom of this file.
-eval "$(fig init bash post)"
+. "$HOME/.fig/shell/bash_profile.post.bash"

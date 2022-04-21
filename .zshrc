@@ -1,9 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-export PATH="${PATH}:${HOME}/.local/bin"
-eval "$(fig init zsh pre)"
-
-
-
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 if [ "$ITERM_PROFILE" = "Default" ]
 then
 	# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -133,6 +129,15 @@ alias py="python3"
 [ -f "/Users/akshansh/.ghcup/env" ] && source "/Users/akshansh/.ghcup/env" # ghcup-env
 
 alias config='/usr/bin/git --git-dir=/Users/akshansh/.cfg/ --work-tree=/Users/akshansh'
+alias lpython='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython'
+alias lpy='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython'
+alias lpyast='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython --show-ast'
+alias lpyasr='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython --show-asr'
+alias lpytok='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython --show-tokens'
+alias lpynewpar='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython --show-ast --new-parser'
+alias lpbuild='/Users/akshansh/Documents/GitHub/lpython/build0.sh && /opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DWITH_LLVM=yes -DWITH_STACKTRACE=yes -DWITH_LFORTRAN_BINARY_MODFILES=no . && /opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake --build . -j16'
+alias lpfetch='cd /Users/akshansh/Documents/GitHub/lpython && conda activate lp && git checkout main && git fetch upstream && git reset --hard upstream/main && git push origin main && lpbuild'
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -149,10 +154,6 @@ fi
 
 
 (( ! ${+functions[p10k]} )) || p10k finalize
-
-# Fig post block. Keep at the bottom of this file.
-eval "$(fig init zsh post)"
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -168,3 +169,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
+export PATH="/opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/bison:$PATH"
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"
