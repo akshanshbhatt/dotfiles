@@ -1,4 +1,5 @@
 tap "domq/gdb"
+tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
@@ -6,6 +7,8 @@ tap "homebrew/services"
 tap "romkatv/powerlevel10k"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# GNU binary tools for native development
+brew "binutils"
 # Console Matrix
 brew "cmatrix"
 # Secure runtime for JavaScript and TypeScript
@@ -52,6 +55,8 @@ brew "sqlmap"
 brew "tree"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Everything you need to get started with Heroku
+brew "heroku/brew/heroku"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Multi-track audio editor and recorder
