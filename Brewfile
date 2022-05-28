@@ -9,6 +9,8 @@ tap "romkatv/powerlevel10k"
 brew "bash"
 # GNU binary tools for native development
 brew "binutils"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Console Matrix
 brew "cmatrix"
 # Secure runtime for JavaScript and TypeScript

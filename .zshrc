@@ -1,6 +1,6 @@
 # Fig pre block. Keep at the top of this file.
 . "$HOME/.fig/shell/zshrc.pre.zsh"
-if [ "$ITERM_PROFILE" = "Default" ]
+if [[ "$ITERM_PROFILE" == "Default" || "$ITERM_PROFILE" == "Hotkey" ]];
 then
 	# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 	# Initialization code that may require console input (password prompts, [y/n]
@@ -26,6 +26,7 @@ export EDITOR='mate -w'
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="spaceship"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
 SPACESHIP_TIME_SHOW=true
@@ -96,6 +97,7 @@ plugins=(
 	git
 	brew
 	textmate
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -143,7 +145,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-if [ "$ITERM_PROFILE" = "Default" ]
+if [[ "$ITERM_PROFILE" == "Default" || "$ITERM_PROFILE" == "Hotkey" ]];
 then
 	source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
