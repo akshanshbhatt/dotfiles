@@ -1,5 +1,6 @@
 # Fig pre block. Keep at the top of this file.
 . "$HOME/.fig/shell/zshrc.pre.zsh"
+
 if [[ "$ITERM_PROFILE" == "Default" || "$ITERM_PROFILE" == "Hotkey" ]];
 then
 	# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -19,7 +20,7 @@ export PYTHONSTARTUP=$HOME/.pythonstartup
 export ZSH="/Users/akshansh/.oh-my-zsh"
 
 # Default editor
-export EDITOR='mate -w'
+export EDITOR='code'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -117,20 +118,21 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+export ARCHFLAGS="-arm64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+# General Purpose aliases
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
 alias py="python3"
-[ -f "/Users/akshansh/.ghcup/env" ] && source "/Users/akshansh/.ghcup/env" # ghcup-env
 
 alias config='/usr/bin/git --git-dir=/Users/akshansh/.cfg/ --work-tree=/Users/akshansh'
+
+#LPython related aliases
 alias lpython='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython'
 alias lpy='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython'
 alias lpyast='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython --show-ast'
@@ -140,6 +142,8 @@ alias lpynewpar='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython --show
 alias lpbuild='/Users/akshansh/Documents/GitHub/lpython/build0.sh && /opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DWITH_LLVM=yes -DWITH_STACKTRACE=yes -DWITH_LFORTRAN_BINARY_MODFILES=no . && /opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake --build . -j16'
 alias lpfetch='cd /Users/akshansh/Documents/GitHub/lpython && conda activate lp && git checkout main && git fetch upstream && git reset --hard upstream/main && git push origin main && lpbuild'
 
+
+[ -f "/Users/akshansh/.ghcup/env" ] && source "/Users/akshansh/.ghcup/env" # ghcup-env
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
