@@ -87,8 +87,6 @@ cask "iterm2"
 cask "krita"
 # Digital logic designer and simulator
 cask "logisim-evolution"
-# SPICE simulation software, schematic capture and waveform viewer
-cask "ltspice"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Web browser
