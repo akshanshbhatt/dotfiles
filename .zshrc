@@ -134,13 +134,19 @@ alias config='/usr/bin/git --git-dir=/Users/akshansh/.cfg/ --work-tree=/Users/ak
 
 #LPython related aliases
 alias lpython='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython'
-alias lpy='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython'
-alias lpyast='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython --show-ast'
-alias lpyasr='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython --show-asr'
-alias lpytok='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython --show-tokens'
-alias lpynewpar='/Users/akshansh/Documents/GitHub/lpython/src/bin/lpython --show-ast --new-parser'
-alias lpbuild='/Users/akshansh/Documents/GitHub/lpython/build0.sh && /opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DWITH_LLVM=yes -DWITH_STACKTRACE=yes -DWITH_LFORTRAN_BINARY_MODFILES=no . && /opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake --build . -j16'
-alias lpfetch='cd /Users/akshansh/Documents/GitHub/lpython && conda activate lp && git checkout main && git fetch upstream && git reset --hard upstream/main && git push origin main && lpbuild'
+alias lpy='lpython'
+alias lpyast='lpy --show-ast'
+alias lpyasr='lpy --show-asr'
+alias lpytok='lpy --show-tokens'
+alias lpynewpar='lpy --show-ast --new-parser'
+alias lpbuild='/Users/akshansh/Documents/GitHub/lpython/build0.sh && \
+	/opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake \
+	-DCMAKE_BUILD_TYPE=Debug -DWITH_LLVM=yes -DWITH_STACKTRACE=yes \
+	-DWITH_LFORTRAN_BINARY_MODFILES=no . \
+	&& /opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake --build . -j16'
+alias lpfetch='cd /Users/akshansh/Documents/GitHub/lpython && conda activate lp \
+	&& git checkout main && git fetch upstream \
+	&& git reset --hard upstream/main && git push origin main && lpbuild'
 
 
 [ -f "/Users/akshansh/.ghcup/env" ] && source "/Users/akshansh/.ghcup/env" # ghcup-env
