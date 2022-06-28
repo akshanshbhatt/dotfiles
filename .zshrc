@@ -1,6 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-. "$HOME/.fig/shell/zshrc.pre.zsh"
-
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 if [[ "$ITERM_PROFILE" == "Default" || "$ITERM_PROFILE" == "Hotkey" ]];
 then
 	# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -185,4 +184,4 @@ export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
 export PATH="/opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/bison:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
