@@ -57,6 +57,8 @@ brew "sqlmap"
 brew "tree"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Graphical network analyzer and capture tool
+brew "wireshark"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # A Zsh Theme
