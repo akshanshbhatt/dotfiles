@@ -7,6 +7,8 @@ tap "homebrew/services"
 tap "romkatv/powerlevel10k"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # GNU binary tools for native development
 brew "binutils"
 # Interpreted, interactive, object-oriented programming language
