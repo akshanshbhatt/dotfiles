@@ -97,6 +97,8 @@ cask "microsoft-auto-update"
 cask "microsoft-edge"
 # Minimal installer for conda specific to conda-forge
 cask "miniforge"
+# Free and open-source RSS reader
+cask "netnewswire"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
