@@ -142,10 +142,10 @@ alias lpbuild='/Users/akshansh/Documents/GitHub/lpython/build0.sh && \
 	/opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake \
 	-DCMAKE_BUILD_TYPE=Debug -DWITH_LLVM=yes -DWITH_STACKTRACE=yes \
 	-DWITH_LFORTRAN_BINARY_MODFILES=no . \
-	&& /opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake --build . -j16'
+	&& /opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake --build . -j8'
 alias lpfetch='cd /Users/akshansh/Documents/GitHub/lpython && conda activate lp \
 	&& git checkout main && git fetch upstream \
-	&& git reset --hard upstream/main && git push origin main && lpbuild'
+	&& git reset --hard upstream/main && git push origin main && git clean -fdx && lpbuild'
 
 
 [ -f "/Users/akshansh/.ghcup/env" ] && source "/Users/akshansh/.ghcup/env" # ghcup-env
@@ -186,7 +186,14 @@ export PATH="/opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/bison:$PATH"
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`
 
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# bun completions
+[ -s "/Users/akshansh/.bun/_bun" ] && source "/Users/akshansh/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
