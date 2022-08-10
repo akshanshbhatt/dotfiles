@@ -127,3 +127,16 @@ cask "unnaturalscrollwheels"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+mas "AdGuard for Safari", id: 1440147259
+mas "Boop", id: 1518425043
+mas "Codye", id: 1516894961
+mas "GarageBand", id: 682658836
+mas "GeoGebra Classic 6", id: 1182481622
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Microsoft To Do", id: 1274495053
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Telegram", id: 747648890
+mas "The Unarchiver", id: 425424353
+mas "Vectornator", id: 1219074514
