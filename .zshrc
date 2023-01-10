@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 if [[ "$ITERM_PROFILE" == "Default" || "$ITERM_PROFILE" == "Hotkey" ]];
 then
 	# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -195,5 +193,4 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+(( ! ${+functions[p10k]} )) || p10k finalize
