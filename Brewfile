@@ -1,8 +1,6 @@
 tap "domq/gdb"
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "romkatv/powerlevel10k"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -19,10 +17,6 @@ brew "cmatrix"
 brew "coreutils"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
-# Pack, ship and run any application as a lightweight container
-brew "docker", link: false
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -33,6 +27,8 @@ brew "gcc"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Tools and libraries to manipulate images in many formats
@@ -63,60 +59,58 @@ brew "sqlmap"
 brew "tree"
 # Vi 'workalike' with many additional features
 brew "vim"
-# Graphical network analyzer and capture tool
-brew "wireshark"
+# JavaScript package manager
+brew "yarn"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
+# Chromium based browser
+cask "arc"
 # Multi-track audio editor and recorder
 cask "audacity"
-# 3D creation suite
-cask "blender"
 # Web browser focusing on privacy
 cask "brave-browser"
+# Automated testing of webapps for Google Chrome
+cask "chromedriver"
 # Free app that makes your Internet safer
 cask "cloudflare-warp"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
-cask "docker"
-# Filesharing using Direct Connect and ADC protocols
-cask "eiskaltdcpp"
-# Reimagine your terminal
-cask "fig"
 # Web browser
 cask "firefox"
+# Solve, save and share math problems, graph functions, etc
+cask "geogebra"
 # Desktop client for GitHub repositories
 cask "github"
+# Java IDE by JetBrains
+cask "intellij-idea"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Free and open-source painting and sketching program
-cask "krita"
-# Digital logic designer and simulator
-cask "logisim-evolution"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Web browser
 cask "microsoft-edge"
 # Minimal installer for conda specific to conda-forge
 cask "miniforge"
+# Media player based on MPlayer and mplayer2
+cask "mpv"
 # Free and open-source RSS reader
 cask "netnewswire"
 # App to write, plan, collaborate, and get organized
 cask "notion"
-# Knowledge base that works on top of a local folder of plain text Markdown files
-cask "obsidian"
-# Client program for the OpenVPN Access Server
-cask "openvpn-connect"
+# Open-source software for live streaming and screen recording
+cask "obs"
+# IDE for professional Python development
+cask "pycharm"
+# Peer to peer Bitorrent client
+cask "qbittorrent"
 # Environment for statistical computing and graphics
 cask "r"
-# Data science software focusing on R and Python
-cask "rstudio"
 # Team communication and collaboration software
 cask "slack"
-# Music streaming service
-cask "spotify"
 # Git client
 cask "sublime-merge"
 # Text editor for code, markup and prose
@@ -133,7 +127,6 @@ mas "AdGuard for Safari", id: 1440147259
 mas "Boop", id: 1518425043
 mas "Codye", id: 1516894961
 mas "GarageBand", id: 682658836
-mas "GeoGebra Classic 6", id: 1182481622
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Microsoft To Do", id: 1274495053
@@ -141,4 +134,4 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
-mas "Vectornator", id: 1219074514
+

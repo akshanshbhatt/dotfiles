@@ -139,11 +139,13 @@ alias lpynewpar='lpy --show-ast --new-parser'
 alias lpbuild='/Users/akshansh/Documents/GitHub/lpython/build0.sh && \
 	/opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake \
 	-DCMAKE_BUILD_TYPE=Debug -DWITH_LLVM=yes -DWITH_STACKTRACE=yes \
+	-DWITH_RUNTIME_STACKTRACE=yes \
 	-DWITH_LFORTRAN_BINARY_MODFILES=no . \
 	&& /opt/homebrew/Caskroom/miniforge/base/envs/lp/bin/cmake --build . -j8'
 alias lpfetch='cd /Users/akshansh/Documents/GitHub/lpython && conda activate lp \
 	&& git checkout main && git fetch upstream \
 	&& git reset --hard upstream/main && git push origin main && git clean -fdx && lpbuild'
+alias brew-deps='brew leaves | xargs brew deps --formula --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"'
 
 
 [ -f "/Users/akshansh/.ghcup/env" ] && source "/Users/akshansh/.ghcup/env" # ghcup-env
