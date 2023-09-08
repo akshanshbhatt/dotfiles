@@ -3,6 +3,7 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "romkatv/powerlevel10k"
+
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -11,8 +12,6 @@ brew "bat"
 brew "binutils"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
-# Console Matrix
-brew "cmatrix"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Secure runtime for JavaScript and TypeScript
@@ -47,6 +46,12 @@ brew "nmap"
 brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Shell command parallelization utility
+brew "parallel"
+# Theme for zsh
+brew "powerlevel10k"
 # Python bindings for v5 of Qt
 brew "pyqt@5"
 # Search tool like grep and The Silver Searcher
@@ -65,8 +70,6 @@ brew "yarn"
 brew "zig"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
-# A Zsh Theme
-brew "romkatv/powerlevel10k/powerlevel10k"
 # Chromium based browser
 cask "arc"
 # Multi-track audio editor and recorder
@@ -123,6 +126,7 @@ cask "unnaturalscrollwheels"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+
 mas "AdGuard for Safari", id: 1440147259
 mas "Boop", id: 1518425043
 mas "Codye", id: 1516894961
@@ -134,4 +138,3 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
-
