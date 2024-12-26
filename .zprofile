@@ -25,3 +25,7 @@ export PATH
 # The original version is saved in .zprofile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
 export PATH
+
+# Created by `pipx` on 2024-01-14 14:00:30
+export PATH="$PATH:/Users/akshansh/.local/bin"
+eval "$(/opt/homebrew/bin/brew shellenv)"

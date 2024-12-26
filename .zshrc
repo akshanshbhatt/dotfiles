@@ -96,6 +96,7 @@ plugins=(
 	brew
 	textmate
 	zsh-syntax-highlighting
+	poetry
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -156,7 +157,7 @@ export NVM_DIR="$HOME/.nvm"
 
 if [[ "$ITERM_PROFILE" == "Default" || "$ITERM_PROFILE" == "Hotkey" ]];
 then
-	source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+	source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 	# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 	[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -196,3 +197,14 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 (( ! ${+functions[p10k]} )) || p10k finalize
+
+# Created by `pipx` on 2024-01-14 14:00:30
+export PATH="$PATH:/Users/akshansh/.local/bin"
+
+# pnpm
+export PNPM_HOME="/Users/akshansh/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
